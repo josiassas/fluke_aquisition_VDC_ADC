@@ -17,10 +17,10 @@ O fluxo do projeto e bem direto:
 
 ## Compilação
 
-No diretório `src`, use o comando abaixo para gerar o executável na pasta pai:
+No diretório pai, use o comando abaixo para gerar o executável:
 
 ```bash
-g++ log_fluke_v1.cpp -o ../log_fluke_v1.exe -lws2_32
+g++ src/log_fluke_v1.cpp -o log_fluke_v1.exe -lws2_32
 ```
 
 ## Execução
