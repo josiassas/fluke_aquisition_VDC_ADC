@@ -15,6 +15,10 @@
 
 using namespace boost::asio;
 
+/**
+ * @brief Get the current date as a formatted string.
+ * @return std::string Current date in format "YYYY-MM-DD"
+ */
 std::string get_current_date()
 {
   auto now = std::chrono::system_clock::now();
@@ -26,6 +30,10 @@ std::string get_current_date()
   return oss.str();
 }
 
+/**
+ * @brief Get the current milliseconds component of the current time.
+ * @return int Milliseconds (0-999) component of the current system time
+ */
 int get_current_milliseconds()
 {
   auto now = std::chrono::system_clock::now();
@@ -33,6 +41,10 @@ int get_current_milliseconds()
   return static_cast<int>(ms.count());
 }
 
+/**
+ * @brief Get the current time as a formatted string with millisecond precision.
+ * @return std::string Current time in format "HH:MM:SS:mmm" where mmm is milliseconds
+ */
 std::string get_current_time()
 {
   auto now = std::chrono::system_clock::now();
@@ -44,7 +56,11 @@ std::string get_current_time()
   return oss.str();
 }
 
-// Remove invalid characters while keeping numeric format
+/**
+ * @brief Clean a numeric string by removing invalid characters.
+ * @param input The input string to clean
+ * @return std::string Cleaned numeric string containing only digits, decimal points, signs, and exponent notation
+ */
 std::string clean_number(const std::string &input)
 {
   std::string result;
