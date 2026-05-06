@@ -23,16 +23,6 @@ No diretório pai, use o comando abaixo para gerar o executável:
 g++ src/log_fluke_v1.cpp -o log_fluke_v1.exe -lws2_32
 ```
 
-## Execução
-
-Execute o programa e informe a porta serial do Fluke, por exemplo `COM5`.
-
-Exemplo:
-
-```bash
-../log_fluke_v1.exe
-```
-
 Durante a execução, o programa pede a porta e cria automaticamente um arquivo CSV em `output/` com nome baseado na porta e na data/hora.
 
 ## Formato da saída

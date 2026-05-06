@@ -147,7 +147,7 @@ int main()
 
         file.open(file_name, std::ios::app);
         file << "sep=;\n";
-        file << "Date;Time;Milliseconds;Voltage (V);Current (A)\n";
+        file << "Date;Time;Voltage (V);Current (A)\n";
 
         std::cout << "[NEW FILE] " << file_name << std::endl;
         last_day = day_current;
